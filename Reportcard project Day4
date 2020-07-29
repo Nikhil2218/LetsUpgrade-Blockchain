@@ -1,0 +1,47 @@
+Make an ethereum based report card submission smart contract and deploy it on Ropsten network
+Transaction hash of solidity code - 0x2127363dae0e2b4fbade75f6877efe256512444680023bfebce1711715ea75ab
+ transaction cost -	619489 gas 
+ execution cost -	438441 gas 
+
+Etherscan transaction hash- 0x8816f4abbef3a63f6ce11fa46516f2039e47ff5b625c7e045710a7b2d73cd580
+Ropsten Testnet transaction link- https://ropsten.etherscan.io/tx/0x8816f4abbef3a63f6ce11fa46516f2039e47ff5b625c7e045710a7b2d73cd580
+
+pragma solidity ^0.4.21 < 0.6.12;
+
+contract ReportCard{
+    
+    string public student_name;
+    uint public roll_number;
+    uint sub1;
+    uint sub2;
+    uint sub3;
+    uint sub4;
+    string public status;
+   
+    
+    function ReportCard(string name,uint roll,uint newEnglish, uint newDrawing,uint newMaths,uint newScience)public{
+        
+       student_name = name;
+       roll_number = roll;
+       sub1 = newEnglish;
+       sub2 = newDrawing;
+       sub3 = newMaths;
+       sub4 = newScience;
+       uint result = newEnglish + newDrawing + newMaths + newScience;
+       if(result < 150)
+       {
+            status = "FAIL"; 
+       }
+       else
+       {
+           status = "PASS";
+       }
+    }
+    
+    function getReport()public view returns(string, uint, uint, uint, uint, uint, string){
+        
+        return (student_name, roll_number, sub1, sub2, sub3, sub4, status);
+   
+    }
+    
+}
