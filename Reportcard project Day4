@@ -39,9 +39,8 @@ contract ReportCard{
     
 }
 
-Transaction hash of solidity code - 0x2127363dae0e2b4fbade75f6877efe256512444680023bfebce1711715ea75ab
- transaction cost -	619489 gas 
- execution cost -	438441 gas 
+Transaction hash of solidity code - 0xf858080eaac775098ce642189fdc630e26ec50e7bdaa8c79b32ebf3cbec23720
+ transaction cost -	522769 gas
 
 Etherscan transaction hash- 0xf858080eaac775098ce642189fdc630e26ec50e7bdaa8c79b32ebf3cbec23720
 Ropsten Testnet transaction link- https://ropsten.etherscan.io/tx/0xf858080eaac775098ce642189fdc630e26ec50e7bdaa8c79b32ebf3cbec23720
